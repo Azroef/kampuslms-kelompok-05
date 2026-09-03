@@ -15,4 +15,3 @@ Setelah instalasi selesai dan halaman selamat datang Laravel muncul, kerjakan **
 4. Jalankan `php artisan route:list`. Cocokkan keluarannya dengan isi `routes/web.php`.
 
 ### Jawaban ###
-
