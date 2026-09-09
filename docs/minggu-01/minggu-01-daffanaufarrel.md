@@ -15,3 +15,74 @@ Setelah instalasi selesai dan halaman selamat datang Laravel muncul, kerjakan **
 4. Jalankan `php artisan route:list`. Cocokkan keluarannya dengan isi `routes/web.php`.
 
 ### Jawaban ###
+1. Menerima Request User
+2. Hasil identifikasi
+-ini yang mengurus routesnya
+   `return Application::configure(basePath: dirname(__DIR__))
+    ->withRouting(
+        web: __DIR__.'/../routes/web.php',
+        commands: __DIR__.'/../routes/console.php',
+        health: '/up',
+    )`
+
+-ini yang mengurus middleware
+    `->withMiddleware(function (Middleware $middleware): void {
+        //
+    })`
+
+-ini yang mengurus exception
+    `->withExceptions(function (Exceptions $exceptions): void {
+        //
+    })->create();`
+
+3. ini yang menghasilkan halaman selamat datang
+`Route::get('/', function () {
+    return view('welcome');
+});`
+ketika welcomenya diganti itu websitenya langsung error, karena terhubung ke resource, view.
+
+4. `php artisan route:list` dan `route/web.php`
+- `route/web.php`
+  
+        Route::get('/', function () {
+            return view('welcome');
+        });
+
+- `php artisan route:list`
+
+    PS C:\Users\ASUS\Documents\Pemrograman Web\kampuslms-kelompok-05\test> php artisan route:list
+  GET|HEAD  / ................................................................................... routes/web.php:5
+  GET|HEAD  storage/{path} storage.local › vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServicePr…
+  PUT       storage/{path} storage.local.upload › vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemSe…
+  GET|HEAD  up ....... vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:219
+
+
+
+### BREAK — Rusak dengan sengaja (30 menit)
+
+Lakukan satu per satu, catat pesan errornya, lalu kembalikan:
+
+| # | Yang dirusak | Prediksi Anda sebelum mencoba | Pesan error sebenarnya |
+|--|--------------|-------------------------------|------------------------|
+| 1 | Ganti nama `.env` menjadi `.env.bak` | Laravel akan error karena `.env` tidak ditemukan |Muncul This site can’t be reached, dan refused to connect  |
+| 2 | Kosongkan nilai `APP_KEY` di `.env` |Laravel masih berjalan, tetapi login akan error |Muncul `No application encryption key has been specified.`|
+| 3 | Ubah `DB_DATABASE` menjadi nama yang tidak ada |Sistem akan error saat membutuhkan database|Muncul `Database file at path [laravel] does not exist.` |
+| 4 | Ubah `APP_DEBUG=false`, lalu ulangi nomor 3 |Detail error akan disembunyikan | Muncul `500 Server Error` |
+
+Nomor 4 adalah yang terpenting. Perhatikan bedanya: dengan `APP_DEBUG=true` Anda melihat seluruh isi konfigurasi dan jejak kode; dengan `false` Anda hanya melihat halaman 500 kosong. **Di server produksi nanti, `APP_DEBUG=true` berarti membocorkan kredensial database Anda kepada siapa pun yang memicu error.** Ini akan diuji di minggu 12.
+
+### FIX — Perbaiki proyek yang cacat (30 menit)
+
+Dosen menyediakan repo `kampuslms-broken`. Pindah ke branch `w01` — isinya proyek Laravel 12 yang tidak mau jalan. Ada **4 masalah**. Temukan dan perbaiki semuanya, lalu kirim Pull Request berisi penjelasan tiap perbaikan.
+
+Petunjuk: masalahnya tersebar di berkas konfigurasi, dependensi, dan satu berkas yang seharusnya tidak ada di dalam repo.
+
+### BUILD — Fondasi proyek kelompok (sisa waktu + tugas terstruktur)
+
+1. Buat repo kelompok di dalam Organization mata kuliah. Nama: `kampuslms-kelompok-XX`.
+2. Instal Laravel 12. Pastikan `php artisan serve` atau Herd berjalan.
+3. Buat `README.md` berisi: nama proyek, daftar anggota + NIM, cara instalasi, dan tabel pembagian peran.
+4. Pastikan `.env.example` lengkap dan `.env` **tidak** ter-commit. Verifikasi dengan `git status`.
+5. Setiap anggota membuat minimal satu commit atas nama dan email masing-masing.
+6. Aktifkan branch protection pada `main`.
+7. Buat satu route baru `/tentang` yang menampilkan view berisi nama kelompok dan anggotanya.
