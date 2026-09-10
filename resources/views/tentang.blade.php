@@ -19,19 +19,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
 
                 <div class="bg-[#f2f3ff] rounded-xl p-4">
-                    Raihandy Wijaya
+                    Muchammad Maulana
                 </div>
 
                 <div class="bg-[#f2f3ff] rounded-xl p-4">
-                    Tika Mila Wahyuni
+                    Linggar Pramudya
                 </div>
 
                 <div class="bg-[#f2f3ff] rounded-xl p-4">
-                    Oktavia Nur Rahmadani
+                    Muhammad Daffa
                 </div>
 
                 <div class="bg-[#f2f3ff] rounded-xl p-4">
-                    Shabrina Putri Azzahra
+                    Melodiva Rosananda
                 </div>
 
             </div>
