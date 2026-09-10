@@ -5,7 +5,7 @@
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
             <div>
-                <p class="text-sm font-semibold text-indigo-600 mb-2">
+                <p class="text-sm font-semibold text-blue-600 mb-2">
                     AKADEMIK / MATA KULIAH
                 </p>
 
@@ -19,7 +19,7 @@
             </div>
 
             <div class="flex items-center gap-2">
-                <span class="px-3 py-2 rounded-lg bg-emerald-50 text-emerald-700 text-sm font-semibold">
+                <span class="px-3 py-2 rounded-lg bg-blue-50 text-blue-700 text-sm font-semibold">
                     ● Semester Genap
                 </span>
             </div>
@@ -47,7 +47,7 @@
 
         <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
             <p class="text-sm text-slate-500">Semester</p>
-            <p class="text-2xl font-bold text-indigo-600 mt-1">
+            <p class="text-2xl font-bold text-blue-600 mt-1">
                 5
             </p>
         </div>
@@ -103,7 +103,7 @@
                         <tr class="hover:bg-slate-50 transition">
 
                             <td class="px-6 py-5">
-                                <span class="px-2.5 py-1 rounded-lg bg-indigo-50 text-indigo-700 font-semibold text-xs">
+                                <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 font-semibold text-xs">
                                     {{ $course['code'] }}
                                 </span>
                             </td>
@@ -135,7 +135,7 @@
                                 {{-- Link detail menggunakan route() agar URL tidak ditulis manual. --}}
                                 <a
                                     href="{{ route('mata-kuliah.show', $course['id']) }}"
-                                    class="inline-flex items-center px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold text-xs hover:bg-indigo-700 transition"
+                                    class="inline-flex items-center px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold text-xs hover:bg-blue-700 transition"
                                 >
                                     Lihat Detail
                                 </a>

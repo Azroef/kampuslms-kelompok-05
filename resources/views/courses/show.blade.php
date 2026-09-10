@@ -3,11 +3,11 @@
     {{-- Breadcrumb untuk navigasi --}}
     <div class="mb-6">
         <div class="flex items-center gap-2 text-sm">
-            <a href="{{ route('dashboard') }}" class="text-indigo-600 hover:underline">
+            <a href="{{ route('dashboard') }}" class="text-blue-600 hover:underline">
                 Dashboard
             </a>
             <span class="text-slate-400">/</span>
-            <a href="{{ route('mata-kuliah.index') }}" class="text-indigo-600 hover:underline">
+            <a href="{{ route('mata-kuliah.index') }}" class="text-blue-600 hover:underline">
                 Mata Kuliah
             </a>
             <span class="text-slate-400">/</span>
@@ -19,7 +19,7 @@
     <div class="mb-8">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div>
-                <p class="text-sm font-semibold text-indigo-600 mb-2">
+                <p class="text-sm font-semibold text-blue-600 mb-2">
                     DETAIL MATA KULIAH
                 </p>
                 
@@ -49,7 +49,7 @@
             <p class="text-xs text-slate-500 uppercase tracking-widest font-semibold">
                 Kode Mata Kuliah
             </p>
-            <p class="text-2xl font-bold text-indigo-600 mt-3">
+            <p class="text-2xl font-bold text-blue-600 mt-3">
                 {{ $course['code'] }}
             </p>
         </div>
@@ -77,7 +77,7 @@
                 Status
             </p>
             <div class="mt-3">
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold">
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold">
                     ● Aktif
                 </span>
             </div>
@@ -97,8 +97,8 @@
             </p>
         </div>
 
-        <div class="flex items-center gap-4 p-5 rounded-xl bg-indigo-50 border border-indigo-200">
-            <div class="w-14 h-14 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+        <div class="flex items-center gap-4 p-5 rounded-xl bg-blue-50 border border-blue-200">
+            <div class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
                 {{ strtoupper(substr(explode(' ', $course['dosen'])[0], 0, 1)) }}
             </div>
 
@@ -124,7 +124,7 @@
         <div class="space-y-4">
 
             <div class="flex items-start gap-4">
-                <span class="material-symbols-outlined text-indigo-600 mt-1">
+                <span class="material-symbols-outlined text-blue-600 mt-1">
                     info
                 </span>
                 <div>
@@ -138,7 +138,7 @@
             </div>
 
             <div class="flex items-start gap-4">
-                <span class="material-symbols-outlined text-indigo-600 mt-1">
+                <span class="material-symbols-outlined text-blue-600 mt-1">
                     school
                 </span>
                 <div>
@@ -152,7 +152,7 @@
             </div>
 
             <div class="flex items-start gap-4">
-                <span class="material-symbols-outlined text-indigo-600 mt-1">
+                <span class="material-symbols-outlined text-blue-600 mt-1">
                     assignment
                 </span>
                 <div>

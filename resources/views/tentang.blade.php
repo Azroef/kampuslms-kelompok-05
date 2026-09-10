@@ -6,7 +6,7 @@
         <div class="mb-12">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                 <div>
-                    <p class="text-sm font-semibold text-indigo-600 mb-2 uppercase tracking-wider">
+                    <p class="text-sm font-semibold text-blue-600 mb-2 uppercase tracking-wider">
                         PROFIL KELOMPOK
                     </p>
 
@@ -19,7 +19,7 @@
                     </p>
                 </div>
 
-                <div class="flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-lg">
+                <div class="flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg">
                     <span class="material-symbols-outlined text-white text-5xl">
                         groups
                     </span>
@@ -132,7 +132,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <div class="text-center md:text-left">
-                    <div class="text-5xl font-bold text-indigo-400 mb-2">
+                    <div class="text-5xl font-bold text-blue-400 mb-2">
                         4
                     </div>
                     <p class="text-slate-300 font-semibold">

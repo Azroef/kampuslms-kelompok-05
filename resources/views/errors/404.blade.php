@@ -8,11 +8,11 @@
             </div>
 
             <h1 class="mt-4 text-3xl font-bold text-slate-800">
-                halamannya kagak ada ges
+               tida ada halamannya bosqu - molan
             </h1>
 
             <p class="mt-3 text-slate-500">
-                cek lagi aja coba
+                ngawur sih
             </p>
 
             <div class="mt-8">

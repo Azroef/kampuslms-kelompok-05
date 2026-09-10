@@ -28,7 +28,7 @@
             <div>
                 {{-- Logo dan nama aplikasi. --}}
                 <div class="flex items-center gap-3 px-2 mb-10">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
                         E
                     </div>
 
@@ -49,7 +49,7 @@
                         href="{{ route('dashboard') }}"
                         class="flex items-center gap-3 rounded-xl px-4 py-3
                         {{ request()->routeIs('dashboard')
-                            ? 'bg-indigo-600 text-white font-semibold shadow-lg'
+                            ? 'bg-blue-600 text-white font-semibold shadow-lg'
                             : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}"
                     >
                         <span class="material-symbols-outlined">
@@ -63,7 +63,7 @@
                         href="{{ route('mata-kuliah.index') }}"
                         class="flex items-center gap-3 rounded-xl px-4 py-3
                         {{ request()->routeIs('mata-kuliah.*')
-                            ? 'bg-indigo-600 text-white font-semibold shadow-lg'
+                            ? 'bg-blue-600 text-white font-semibold shadow-lg'
                             : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}"
                     >
                         <span class="material-symbols-outlined">
@@ -77,7 +77,7 @@
                         href="{{ route('tentang') }}"
                         class="flex items-center gap-3 rounded-xl px-4 py-3
                         {{ request()->routeIs('tentang')
-                            ? 'bg-indigo-600 text-white font-semibold shadow-lg'
+                            ? 'bg-blue-600 text-white font-semibold shadow-lg'
                             : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}"
                     >
                         <span class="material-symbols-outlined">
@@ -96,7 +96,7 @@
                 </p>
 
                 <div class="flex items-center gap-2 mt-2 text-xs text-slate-400">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="w-2 h-2 rounded-full bg-blue-400"></span>
                     Sistem Aktif
                 </div>
             </div>
@@ -119,7 +119,7 @@
                         <input
                             type="search"
                             placeholder="Cari mata kuliah, materi, dosen..."
-                            class="w-full pl-10 pr-4 py-2.5 bg-slate-100 border-0 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            class="w-full pl-10 pr-4 py-2.5 bg-slate-100 border-0 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                         >
                     </div>
 
@@ -133,7 +133,7 @@
                             </p>
                         </div>
 
-                        <div class="w-9 h-9 rounded-full bg-indigo-600 text-white flex items-center justify-center font-semibold">
+                        <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
                             M
                         </div>
                     </div>
